@@ -48,7 +48,13 @@ export default function Login(props){
 
 
         }
-        if(page===1 && password.valid){
+        else if(page===1 && password.valid){
+
+            console.log(email.email);
+            console.log(password.password)
+            
+
+
             navigate("/Home");
         }
 
@@ -95,6 +101,7 @@ export default function Login(props){
                         </div>:true }</div>
                         :  
                         <div className="form-outline mb-4">
+                        <h4>{email.email}</h4>
                         <label className="form-label" for="form2Example27">Password</label>
                         <input type="password" id="form2Example27" className="form-control form-control-lg"  value={password.password} onChange={handlePasswordChange}/>
     
@@ -114,7 +121,6 @@ export default function Login(props){
                     <button className="btn btn-dark btn-lg btn-block" type="button" onClick={handleClick}>{boton}</button>
                   </div>
 
-                  <a className="small text-muted" href="#!">Forgot password?</a>
       
                
                 </form>

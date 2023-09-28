@@ -12,6 +12,7 @@ import React, { useEffect, useState } from 'react';
 
 
 function App() {
+  const [editable, setEdit] = useState ( Math.random() < 0.5); 
 
 
 
@@ -27,6 +28,9 @@ function App() {
   return (
     <div>
 
+
+     
+
     <BrowserRouter>
 
 
@@ -35,8 +39,8 @@ function App() {
 
 
         <Route path="/LogIn" element={<Login/>} />
-        <Route path="/Home" element={<Home books={data}/>}/>
-        <Route path="/LogIn" element={<Login/>}/>
+        <Route path="/Home" element={<Home books={data} editable = {editable}/>}/>
+        <Route path="/" element={<Login/>}/>
 
 
         </Routes>

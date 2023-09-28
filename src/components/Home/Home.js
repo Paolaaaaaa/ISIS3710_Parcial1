@@ -51,6 +51,9 @@ export default function Home(props){
 <section className="vh-100" >
 
     <div className='title'><h1>Carros O.0</h1></div>
+    <h2>Editable: {props.editable?<p>true</p>:<p>false</p>}</h2>
+
+
     <div className="galerie_detail">
         
 
