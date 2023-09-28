@@ -18,13 +18,12 @@ export default function Detail({ bookDetail, editable }) {
             </form>
           ) : (
             <div>
-              <p className="card-text"><strong>carMaker: </strong>{bookDetail.carMaker}</p>
-              <p className="card-text"><strong>carModel: </strong>{bookDetail.carModel}</p>
-              <p className="card-text"><strong>Publisher: </strong>{bookDetail.publisher}</p>
-              <p className="card-text"><strong>Genre: </strong>{bookDetail.genre}</p>
-              <p className="card-text"><strong>Available Online: </strong>{bookDetail.availableOnline}</p>
+              <p className="card-text"><strong>car Maker: </strong>{bookDetail.carMaker}</p>
+              <p className="card-text"><strong>car Model: </strong>{bookDetail.carModel}</p>
+              <p className="card-text"><strong>car Year: </strong>{bookDetail.carYear}</p>
+              <p className="card-text"><strong>Available Online: </strong>{bookDetail.available}</p>
               <p className="card-text"><strong>Price: </strong>{bookDetail.price}</p>
-              <p className="card-text"><strong>Summary: </strong>{bookDetail.summary}</p>
+              <p className="card-text"><strong>Description: </strong>{bookDetail.description}</p>
             </div>
           )}
         </div>

@@ -50,8 +50,7 @@ export default function Home(props){
     return (
 <section className="vh-100" >
 
-    <div className='title'><h1>Books</h1></div>
-    <h1>Books</h1>
+    <div className='title'><h1>Carros O.0</h1></div>
     <div className="galerie_detail">
         
 
