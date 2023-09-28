@@ -17,6 +17,8 @@ function Card(props){
                 <div className="card-body">
                     <h5 className="card-title">{props.partName}</h5>
                     <h4 className="card-text">{props.carModel}</h4>
+                    <p className="card-text">{props.price} euros - {props.carYear}</p>
+
                 </div>
             </div>
 

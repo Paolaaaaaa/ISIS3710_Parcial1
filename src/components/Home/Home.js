@@ -21,10 +21,12 @@ export default function Home(props){
         const books_jx = props.books.map((book, index) => (
           <Col key={index} md={3}> {}
             <Card
-              title={book.title}
+              carModel={book.carModel}
               image={book.image}
-              isbn={book.isbn}
+              partName={book.partName}
               id_loc ={index}
+              price ={book.price}
+              carYear = {book.carYear}
               onClick={handleCardClick} 
             />
           </Col>
