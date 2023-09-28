@@ -1,0 +1,32 @@
+.galerie_detail{
+
+    display: flex;
+}
+
+
+
+.galerie{
+
+}
+
+
+.card{
+
+    margin: 2rem;
+}
+
+.vh-100 {
+
+    padding: 2rem;
+}
+
+.title {
+
+    justify-content: center;
+    padding: 2rem;
+
+}
+
+.vh-100{
+    justify-content: center;
+}
