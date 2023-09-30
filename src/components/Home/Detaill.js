@@ -1,3 +1,5 @@
+import { FormattedMessage } from "react-intl";
+
 export default function Detail({ bookDetail, editable }) {
     if (!bookDetail) return <div>No existe este libro</div>;
   
@@ -18,12 +20,12 @@ export default function Detail({ bookDetail, editable }) {
             </form>
           ) : (
             <div>
-              <p className="card-text"><strong>car Maker: </strong>{bookDetail.carMaker}</p>
-              <p className="card-text"><strong>car Model: </strong>{bookDetail.carModel}</p>
-              <p className="card-text"><strong>car Year: </strong>{bookDetail.carYear}</p>
-              <p className="card-text"><strong>Available Online: </strong>{bookDetail.available}</p>
-              <p className="card-text"><strong>Price: </strong>{bookDetail.price}</p>
-              <p className="card-text"><strong>Description: </strong>{bookDetail.description}</p>
+              <p className="card-text"><strong><FormattedMessage id = "car_Maker"/>: </strong>{bookDetail.carMaker}</p>
+              <p className="card-text"><strong><FormattedMessage id = "car_model"/>: </strong>{bookDetail.carModel}</p>
+              <p className="card-text"><strong><FormattedMessage id = "car_Year"/>:</strong>{bookDetail.carYear}</p>
+              <p className="card-text"><strong><FormattedMessage id = "available"/>: </strong>{String(bookDetail.available)}</p>
+              <p className="card-text"><strong><FormattedMessage id = "price"/>: </strong>{bookDetail.price}</p>
+              <p className="card-text"><strong><FormattedMessage id = "Description"/>: </strong>{bookDetail.description}</p>
             </div>
           )}
         </div>

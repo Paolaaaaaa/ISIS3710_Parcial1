@@ -6,5 +6,14 @@
     "password": "Password",
     "passwordFormat": "Your password does not have enough characters",
     "NextButton":"Next",
-    "SendButton":"Submit"
+    "SendButton":"Submit",
+    "title_home":"Cars Parts",
+    "EditableTitle":"Editable",
+    "car_Maker": "Car Maker",
+    "car_model": "Car Model",
+    "car_Year": "Car Year",
+    "available":"Available Online",
+    "price":"Price",
+    "Description":"Description"
+
 }

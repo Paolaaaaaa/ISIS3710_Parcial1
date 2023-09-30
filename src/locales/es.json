@@ -6,5 +6,19 @@
     "password": "Contraseña",
     "passwordFormat": "Su contraseña no tiene suficientes caracteres.",
     "NextButton":"Siguiente",
-    "SendButton":"Enviar"
+    "SendButton":"Enviar",
+    "title_home":"Partes de Carros",
+    "EditableTitle":"Editable",
+    "car_Maker": "Fabricante",
+    "car_model": "Modelo",
+    "car_Year": "Año del carro",
+    "available":"Disponible Online",
+    "price":"Precio",
+    "Description":"Descripción"
+
+
+
+
+
+
 }

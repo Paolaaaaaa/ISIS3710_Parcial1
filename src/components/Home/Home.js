@@ -4,6 +4,8 @@ import './home.css'
 import Card from './Card';
 import { Col, Row } from 'react-bootstrap';
 import { useEffect, useState } from 'react';
+import { FormattedMessage } from "react-intl";
+
 
 import Detail from './Detaill';
 export default function Home(props){
@@ -50,8 +52,8 @@ export default function Home(props){
     return (
 <section className="vh-100" >
 
-    <div className='title'><h1>Carros O.0</h1></div>
-    <h2>Editable: {props.editable?<p>true</p>:<p>false</p>}</h2>
+    <div className='title'><h1><FormattedMessage id = "title_home"/></h1></div>
+    <h2><FormattedMessage id = "EditableTitle"/>: {props.editable?<p>true</p>:<p>false</p>}</h2>
 
 
     <div className="galerie_detail">
