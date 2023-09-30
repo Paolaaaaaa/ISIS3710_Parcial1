@@ -1,0 +1,10 @@
+{
+    "lema": "Your trusted team",
+    "loginTitle": "Access to your Account",
+    "user_email": "User or email",
+    "emailFormat": "Your email is not formatted correctly: Take \"name@hotmail.com\" as an example.",
+    "password": "Password",
+    "passwordFormat": "Your password does not have enough characters",
+    "NextButton":"Next",
+    "SendButton":"Submit"
+}

@@ -1,0 +1,10 @@
+{
+    "lema": "Tu escudería de confianza",
+    "loginTitle": "Accede a tu cuenta",
+    "user_email": "Usuario o email",
+    "emailFormat": " Su correo no tiene un formato correcto: Tome de ejemplo\"nombre@hotmail.com\"",
+    "password": "Contraseña",
+    "passwordFormat": "Su contraseña no tiene suficientes caracteres.",
+    "NextButton":"Siguiente",
+    "SendButton":"Enviar"
+}

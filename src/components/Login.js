@@ -1,7 +1,7 @@
 import { Alert } from "bootstrap";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import { FormattedMessage } from "react-intl";
 export default function Login(props){
 
         const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
@@ -15,7 +15,7 @@ export default function Login(props){
 
     let navigate = useNavigate(); 
     const [page, setPage] = useState(0); 
-    const [boton, setBoton] = useState("Siguiente"); 
+    const [boton, setBoton] = useState(<FormattedMessage id = "NextButton"/>); 
 
 
 
@@ -44,7 +44,7 @@ export default function Login(props){
         if(page ===0 && email.valid ){
 
             setPage(page+1);
-            setBoton("Submit");
+            setBoton(<FormattedMessage id= "SendButton"/>);
 
 
         }
@@ -75,7 +75,7 @@ export default function Login(props){
               <img src="https://www.rd.com/wp-content/uploads/2021/04/usedbooksonline2.jpg"
                 alt="login form" className="img-fluid" />
 
-                <h2>Encuentra hasta el libro que no estabas buscando</h2>
+                <h2><FormattedMessage id= "lema" /></h2>
             </div>
             <div className="col-md-6 col-lg-7 d-flex align-items-center">
               <div className="card-body p-4 p-lg-5 text-black">
@@ -86,28 +86,30 @@ export default function Login(props){
                     <i className="fas fa-cubes fa-2x me-3" ></i>
                   </div>
 
-                  <h3 className="fw-normal mb-3 pb-3" >Tu Librería Aliada</h3>
+                  <h3 className="fw-normal mb-3 pb-3" ><FormattedMessage id = "loginTitle"/></h3>
 
 
                   {page===0?
                   
                 
                 <div className="form-outline mb-4">
-                    <label className="form-label" for="form2Example17">User or email</label>
+                    <label className="form-label" for="form2Example17"><FormattedMessage id= "user_email"/></label>
                     <input type="email" id="form2Example17" value={email.email} onChange={handleEmailChange} className="form-control form-control-lg" />
 
                      {(!email.valid) ?  <div className="text-danger">
-                        Su correo no tiene un formato correcto: Tome de ejemplo "nombre@hotmail.com"
+                        <FormattedMessage id = "emailFormat" />
                         </div>:true }</div>
                         :  
                         <div className="form-outline mb-4">
                         <h4>{email.email}</h4>
-                        <label className="form-label" for="form2Example27">Password</label>
+                        <label className="form-label" for="form2Example27"><FormattedMessage id ="password" /></label>
                         <input type="password" id="form2Example27" className="form-control form-control-lg"  value={password.password} onChange={handlePasswordChange}/>
     
     
                         {(!password.valid) ?  <div className="text-danger">
-                            Su contraseña no tiene suficientes caracteres 
+
+                        <FormattedMessage id = "passwordFormat" />
+
                             </div>:true}
                       </div>}
 
